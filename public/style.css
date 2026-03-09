@@ -21,20 +21,27 @@ body {
   font-family: "Domine", serif;
   color: #fff;
 }
-
+.logo {
+  color: rgb(0, 0, 0);
+}
 .nav-bar {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   padding: 1rem;
-  background-color: transparent;
+  background-color: #eee;
+  z-index: 10;
 }
 
 .nav-links {
   margin-left: 3rem;
-  width: 50%;
+  width: 50rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -268,3 +275,5 @@ body {
   text-align: center;
   line-height: 1.7rem;
 }
+
+
