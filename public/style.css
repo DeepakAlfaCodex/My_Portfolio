@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Domine:wght@500&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbit&family=Playwrite+GB+J:ital,wght@0,100..400;1,100..400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+body {
+  background: linear-gradient(135deg, #0b0f14);
+  font-family: "Domine", serif;
+  color: #fff;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem;
+  background-color: transparent;
+}
+
+.nav-links {
+  margin-left: 3rem;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: #9ca3af;
+  font-size: 1.2rem;
+}
+
+.nav-bar a:hover {
+  color: #00e5c5;
+}
+
+.nav-bar a:active {
+  color: #00e5c5;
+}
+
+.nav-bar a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #00e5c5;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-bar a:hover::after {
+  width: 100%;
+}
+
+.intro-section {
+  width: 50%;
+  margin-top: 5rem;
+  padding-left: 3rem;
+  padding-top: 1rem;
+  background-color: transparent;
+}
+
+.title {
+  line-height: 3.5rem;
+}
+
+.title h2 {
+  font-size: 3rem;
+}
+
+.title span {
+  color: #00e5c5;
+  font-size: 3rem;
+}
+
+.title p {
+  color: #03ceb3;
+  font-size: 1.5rem;
+  font-family: "Playwrite GB J", cursive;
+}
+#typed-text {
+  font-size: 2.5rem;
+  font-family: "Lobster Two", sans-serif;
+  background: linear-gradient(90deg, #00BFFF, #A855F7, #FF3131);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.intro-content {
+  line-height: 1.8rem;
+}
+
+.intro-btn {
+  border: 2px solid #00e5c5;
+  width: 22%;
+  height: 2.5rem;
+  border-radius: 2rem;
+  margin: 0.75rem 0;
+}
+
+.intro-btn:hover {
+  background: linear-gradient(135deg, #00e5c5);
+}
+
+.intro-btn a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  width: 10rem;
+}
+
+.social-links .insta:hover {
+  transform: scale(1.8);
+  transition: all 0.5s ease-in-out;
+  color: #FF3131;
+}
+
+.social-links .x:hover {
+  transform: scale(1.8);
+  transition: all 0.5s ease-in-out;
+  color: #1f1e1e;
+}
+
+.social-links .fb:hover {
+  transform: scale(1.8);
+  transition: all 0.5s ease-in-out;
+  color: #1877F2;
+}
+
+.circle {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #00e5c5);
+  margin: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle i {
+  font-size: 1.5rem;
+  color: #000000;
+  margin: 0.5rem;
+}
+
+.image-section {
+  width: 50rem;
+  height: 100%;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-left: 10rem;
+  animation: float 1s ease-in-out infinite;
+  animation-duration: 2s;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.image-section::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  z-index: 0;
+  
+}
+
+.image-section img {
+  border-radius: 50%;
+  width: 450px;
+  height: 450px;
+  object-fit: cover;
+  position: relative;
+  z-index: 1;
+  border: 4px solid #00e5c5;
+  box-shadow: 0 0 20px #00e5c5;
+}
+
+.main-content {
+  display: flex;
+}
+
+.about-section {
+  margin-top: 10rem;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-section::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(50px);
+  z-index: 0;
+}
+
+.about-img img {
+  margin-top: 2rem;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  position: relative;
+  z-index: 1;
+  border: 4px solid #00e5c5;
+  box-shadow: 0 0 40px #00e5c5;
+}
+
+.about-title {
+  margin-left: 0.75rem;
+  height: 3rem;
+  width: 8rem;
+  margin-top: 1rem;
+}
+
+.about-title span {
+  color: #00e5c5;
+}
+
+.about-content {
+  margin-top: 1rem;
+  text-align: center;
+  line-height: 1.7rem;
+}
