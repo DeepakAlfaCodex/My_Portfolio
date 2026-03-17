@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #020617 ;
+        font-family: 'Poppins', sans-serif;
+        color: #e2e8f0;
+        overflow-x: hidden;
+    }
+
+    video {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        opacity: 0.15;
+        z-index: -1;
+    }
+
+    .main-container {
+        min-height: 100vh;
+        width: 90%;
+        max-width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 50px 0;
+        text-align: center;
+    }
+
+    h2 {
+        background-color: #10b981;
+        color: #e2e8f0;
+        padding: 8px 25px;
+        border-radius: 50px;
+        font-size: 0.9rem;
+        letter-spacing: 2px;
+        margin-bottom: 15px;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+        color: #e2e8f0; 
+        margin-bottom: 5px;
+        text-transform: uppercase;
+    }
+
+    hr {
+        width: 60px;
+        border: 2px solid #10b981;
+        margin-bottom: 30px;
+    }
+
+    .content {
+        max-width: 800px;
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: #e2e8f0;
+        margin-bottom: 50px;
+        font-style: normal; 
+    }
+
+    .inner-div {
+        display: flex;
+        gap: 30px;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .left-content, .right-content {
+        background: rgba(255, 255, 255, 0.03); 
+        backdrop-filter: blur(10px); 
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 30px;
+        border-radius: 20px;
+        width: 320px;
+        transition: all 0.4s ease;
+    }
+
+    .left-content:hover, .right-content:hover {
+        transform: translateY(-10px);
+        border-color: #e11d48;
+        box-shadow: 0 10px 30px rgba(225, 29, 72, 0.2);
+    }
+
+    .inner-div i {
+        color: #06b6d4;
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+
+
+    button {
+        margin-top: 50px;
+        background-color: #10b981;
+        border: none;
+        padding: 12px 40px;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    button a {
+        color: #e2e8f0;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    button:hover {
+        box-shadow: 0 0 25px rgba(225, 29, 72, 0.6);
+        transform: scale(1.05);
+    }
+    </style>
+  </head>
+  <body>
+    <!-- <video src="port-video.mp4" autoplay muted loop></video> -->
+
+    <div class="main-container">
+
+      <h2>ABOUT US</h2>
+      <h1>WHO ARE WE?</h1>
+      <hr />
+
+      <div class="content">
+        <p>
+          I am a dedicated Full Stack Developer with a strong focus on modern
+          JavaScript technologies and the MERN stack. I enjoy building dynamic
+          web applications and constantly improving my problem-solving
+          abilities.I believe consistency, discipline, and continuous learning
+          are the keys to growth in the tech industry. My aim is to work on
+          challenging projects, collaborate with talented teams, and deliver
+          high-quality, scalable solutions.
+        </p>
+      </div>
+
+      <div class="inner-div">
+        <div class="left-content">
+            <h3><i class="fa-regular fa-eye"></i> &nbsp;&nbsp;Clean Code</h3>
+            <p>Writing maintainable and readable code is a priority for me.</p>
+        </div>
+        <div class="right-content">
+            <h3><i class="fa-solid fa-window-maximize"></i> &nbsp;&nbsp;Modern Design</h3>
+            <p>Creating responsive and visually appealing user interfaces.</p>
+        </div>
+    </div>
+    <button><a href="http://localhost:8080/">Home</a></button>
+  </body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      body {
+        color: white;
+        background-color: #020617;
+      }
+
+      h1 {
+        text-align: center;
+        margin-top: 30px;
+      }
+
+      .main-container {
+        height: 600px;
+        width: 100%;
+        display: flex;
+        margin-top: 70px;
+      }
+
+      .contect-info {
+        width: 50%;
+        margin-left: 40px;
+      }
+
+      p {
+        max-width: 400px;
+        margin-top: 50px;
+      }
+
+      .info-item {
+        margin-top: 20px;
+      }
+
+      .contect-form {
+        color: black;
+        width: 50%;
+        height: 100%;
+      }
+
+      hr {
+        width: 60px;
+        border: 2px solid #10b981;
+        margin-bottom: 30px;
+    }
+    </style>
+  </head>
+  <body>
+    <h1>Contact form</h1>
+    <hr>
+
+    <div class="main-container">
+      <div class="contect-info">
+        <h2>GET IN TOUCH :-</h2>
+        <p>
+          Have a project idea or a question? Let's connect and build something
+          amazing together.
+        </p>
+        <div class="info-links">
+          <div class="info-item">
+            <i class="fas fa-envelope"></i>
+            <span>pawan.trader@email.com</span>
+          </div>
+          <div class="info-item">
+            <i class="fab fa-linkedin"></i>
+            <span
+              >LinkedIn Profile <br />
+              &nbsp;&nbsp; &nbsp; &nbsp;[
+              <a
+                href="https://www.linkedin.com/in/pawan-kumar-536484331/"
+                target="_blank"
+                >https://www.linkedin.com/in/pawan-kumar-536484331/</a
+              >
+              ]</span
+            >
+          </div>
+          <div class="info-item">
+            <i class="fab fa-github"></i>
+            <span
+              >GitHub Profile <br />
+              &nbsp;&nbsp; &nbsp; [
+              <a href="https://github.com/PawanQuant" target="_blank"
+                >https://github.com/PawanQuant</a
+              >
+              ]</span
+            >
+            <br />
+          </div>
+        </div>
+      </div>
+
+      <div class="contect-form">
+        
+        <div class="container">
+          <div class="row justify-content-center mt-1">
+            <div class="col-md-8">
+              <form
+                class="bg-white p-4 shadow rounded"
+                action="/login"
+                method="post"
+              >
+                <h3 class="text-center mb-4">Login</h3>
+                <div class="mb-3">
+                  <label>Email: </label>
+                   <input
+                    type="name"
+                    class="form-control mt-2"
+                    name="name"
+                    placeholder="Enter your name"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label>Email: </label>
+                  <input
+                    type="email"
+                    class="form-control mt-2"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                  />
+                </div>
+                
+                <div class="mb-3">
+                  <label> Your Message</label>
+                  <textarea
+                    type="textarea"
+                    class="form-control mt-2"
+                    name="textarea"
+                    placeholder="Your Message"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">
+                  Login
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
